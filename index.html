@@ -1,81 +1,157 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopee Style Design</title>
+    <title>Modern E-Commerce</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="12354687.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <div class="top-banner">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            🔥 MEGA CLEARANCE SALE! Up to 90% OFF on selected items. Limited time only! Free shipping on orders over $50. 🔥
+        </marquee>
+    </div>
+
     <header class="main-header">
         <div class="header-content">
-            <div class="logo">SHOPEE CLONE</div>
-            <div class="search-box">
-                <input type="text" placeholder="ค้นหาดีลดีๆ ได้ที่นี่...">
-                <button>🔍</button>
+            <div class="logo">TrustMart</div>
+            
+        <div class="search-wrapper">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for products, brands and more...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+    
+            <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-item">
+                        <div class="sugg-img"><i class="fas fa-headphones"></i></div>
+                        <div class="sugg-text">Noise Cancelling Headphones</div>
+                    </div>
+                <div class="suggestion-item">
+                    <div class="sugg-img"><i class="fas fa-laptop"></i></div>
+                    <div class="sugg-text">Ultra-Slim Laptop 16GB RAM</div>
+                </div>
+                <div   div class="suggestion-item">
+                    <div class="sugg-img"><i class="fas fa-camera"></i></div>
+                    <div class="sugg-text">Mirrorless Digital Camera</div>
+                </div>
+                <div class="suggestion-item">
+                    <div class="sugg-img"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="sugg-text">Latest Smartphone Pro</div>
+                </div>
+            </div>
+        </div>
+
+            <div class="header-icons">
+                <div class="icon-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </div>
+                <div class="icon-item" id="accountBtn">
+                    <i class="fas fa-user"></i>
+                    <span>Account</span>
+                </div>
             </div>
         </div>
     </header>
 
+    <nav class="category-nav">
+        <div class="nav-content">
+            <a href="Electronics.html">Electronics</a>
+            <a href="Fashion.html">Fashion</a>
+            <a href="#">Home & Living</a>
+            <a href="HealthandBeauty.html">Health & Beauty</a>
+            <a href="Sports.html">Sports</a>
+            <a href="Toys.html">Toys</a>
+        </div>
+    </nav>
+
     <div class="container">
-        <h2 class="section-title">หมวดหมู่สินค้า</h2>
-        <section class="categories">
-            <div class="cat-item">เครื่องสำอาง</div>
-            <div class="cat-item">อุปกรณ์เสริมคอม</div>
-            <div class="cat-item">เสื้อผ้าผู้ชาย</div>
-            <div class="cat-item">อาหารและเครื่องดื่ม</div>
-            <div class="cat-item">เกมและอุปกรณ์</div>
-        </section>
-
-        <h2 class="section-title">FLASH SALE <span class="timer">00:55:31</span></h2>
+        
+        <h2 class="section-title">⚡ Flash Sale - Up to 90% OFF <span class="timer">Ends in 00:55:31</span></h2>
         <section class="flash-sale" id="flashSaleContainer">
-            <div class="flash-card reveal-item">
-                <div class="img-placeholder">IMAGE</div>
-                <p class="product-name">หูฟังตัดเสียงรบกวน</p>
-                <p class="price">฿890</p>
+            <div class="product-card reveal-item">
+                <div class="discount-badge">-90%</div>
+                <div class="img-placeholder"><i class="fas fa-headphones fa-3x"></i></div>
+                <p class="product-name">Noise Cancelling Headphones</p>
+                <div class="price-container">
+                    <span class="price">$29.90</span>
+                    <span class="old-price">$299.00</span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <div class="flash-card reveal-item">
-                <div class="img-placeholder">IMAGE</div>
-                <p class="product-name">คีย์บอร์ดไร้สาย</p>
-                <p class="price">฿1,200</p>
+            <div class="product-card reveal-item">
+                <div class="discount-badge">-80%</div>
+                <div class="img-placeholder"><i class="fas fa-keyboard fa-3x"></i></div>
+                <p class="product-name">Wireless Mechanical Keyboard</p>
+                <div class="price-container">
+                    <span class="price">$30.00</span>
+                    <span class="old-price">$150.00</span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <div class="flash-card reveal-item">
-                <div class="img-placeholder">IMAGE</div>
-                <p class="product-name">เมาส์เกมมิ่ง RGB</p>
-                <p class="price">฿450</p>
+            <div class="product-card reveal-item">
+                <div class="discount-badge">-75%</div>
+                <div class="img-placeholder"><i class="fas fa-mouse fa-3x"></i></div>
+                <p class="product-name">Ergonomic RGB Mouse</p>
+                <div class="price-container">
+                    <span class="price">$15.00</span>
+                    <span class="old-price">$60.00</span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <div class="flash-card reveal-item">
-                <div class="img-placeholder">IMAGE</div>
-                <p class="product-name">พัดลมตั้งโต๊ะ</p>
-                <p class="price">฿290</p>
+            <div class="product-card reveal-item">
+                <div class="discount-badge">-60%</div>
+                <div class="img-placeholder"><i class="fas fa-desktop fa-3x"></i></div>
+                <p class="product-name">144Hz Gaming Monitor</p>
+                <div class="price-container">
+                    <span class="price">$120.00</span>
+                    <span class="old-price">$300.00</span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
         </section>
 
-        <h2 class="section-title">สินค้าแนะนำประจำวัน</h2>
+        <h2 class="section-title">Recommended For You</h2>
         <section class="recommended">
-            <div class="recom-card">
-                <div class="img-placeholder">IMAGE</div>
-                <p class="product-name">ไอเทมลับสำหรับการสตรีม</p>
-                <p class="price">฿2,500</p>
+            <div class="product-card">
+                <div class="img-placeholder"><i class="fas fa-camera fa-3x"></i></div>
+                <p class="product-name">Mirrorless Digital Camera</p>
+                <p class="price">$850.00</p>
             </div>
-            <div class="recom-card">
-                <div class="img-placeholder">IMAGE</div>
-                <p class="product-name">จอมอนิเตอร์ 165Hz</p>
-                <p class="price">฿7,500</p>
+            <div class="product-card">
+                <div class="img-placeholder"><i class="fas fa-laptop fa-3x"></i></div>
+                <p class="product-name">Ultra-Slim Laptop 16GB RAM</p>
+                <p class="price">$1,200.00</p>
             </div>
-            <div class="recom-card">
-                <div class="img-placeholder">IMAGE</div>
-                <p class="product-name">เมาส์เกมส์มิ่ง</p>
-                <p class="price">฿2,500</p>
+            <div class="product-card">
+                <div class="img-placeholder"><i class="fas fa-mobile-alt fa-3x"></i></div>
+                <p class="product-name">Latest Smartphone Pro</p>
+                <p class="price">$999.00</p>
             </div>
-            <div class="recom-card">
-                <div class="img-placeholder">IMAGE</div>
-                <p class="product-name">จอมอนิเตอร์ 144Hz</p>
-                <p class="price">฿5,900</p>
+            <div class="product-card">
+                <div class="img-placeholder"><i class="fas fa-watch fa-3x"></i></div>
+                <p class="product-name">Smart Fitness Watch</p>
+                <p class="price">$199.00</p>
             </div>
         </section>
+    </div>
+
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2>Welcome Back</h2>
+            <p>Please login to your account</p>
+            <form class="auth-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="login-btn">Login</button>
+                <p class="switch-auth">Don't have an account? <a href="#">Sign Up</a></p>
+            </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
